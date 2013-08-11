@@ -1,0 +1,52 @@
+"3.5 (created: 2012/08/04 00:41:20)
+
+source! "C:\\Users\\T420\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
+" my shortcut
+set gui=none,tabs
+set tabnumbers=true
+nmap <F12> :set gui=none
+map re :restart
+cm <c-o> :dialog preferences<CR>
+set nextpattern=\\bnext\\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\\bmore\\b,下一页,下页
+set previouspattern=\\bprev|previous\\b,^<$,^(<<|«)$,^(<|«),(<|«)$,上一页,上页
+
+"my bookmark
+map gsd :open file:///C:/Users/T420/Desktop/mgsd.html<CR>
+
+" adapte vimium for chrome
+
+nmap d <C-d>
+nmap u <C-u>
+nnoremap X u
+nnoremap x d
+nmap J <C-p>
+nmap K <C-n>
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+
+" hint style. like chrome vimium
+highlight HintElem background-color: ;
+highlight Hint font-family: san; font-size: 13px; font-weight: bold; text-transform: uppercase; color: black; background-color: #FFFF66; border-color: #E3BE23; border-width: 1px; border-style: solid; padding: 0px 1px 0px 1px; border-radius: 3px; position:absolute;z-index:99999; 
+
+" hint for weibo.com
+set hinttags+=\|\//img[@class=\'video_play\'\ or\ @class=\'bigcursor\'\ or\ @action-type=\'feed_list_media_bigimg\']\|\//div[@class=\'ui-button\ skin-button-willlight\'\ or\ @class=\'ui-button\ skin-button-willblue\'\ or\ @class=\'ui-button\ skin-button-willblue-lite\']
+"map -urls=www\\.weibo\\.com s f
+"map -urls=www\\.weibo\\.com S F
+nmap s f
+nmap S F
+
+" firefox browser.zoom.full;true
+nnoremap zi zI
+nnoremap zo zO
+nnoremap zz zZ
+nnoremap zI zi
+nnoremap zO zo
+nnoremap zZ zz
+
+
+
+"" typically (see below) ignore case
+set ignorecase
+"" only consider case if an upper case char is used
+set smartcase
