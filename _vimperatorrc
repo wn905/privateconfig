@@ -50,3 +50,4 @@ nnoremap zZ zz
 set ignorecase
 "" only consider case if an upper case char is used
 set smartcase
+set defsearch=百度
