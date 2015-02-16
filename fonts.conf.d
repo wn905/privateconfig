@@ -1,0 +1,1 @@
+/home/daning/.config/fontconfig/conf.d
